@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/*.{html, js}"],
+  content: [
+    './public/**/*.html',
+    './index.html'
+  ],
   theme: {
     extend: {
       colors:{
@@ -20,7 +23,7 @@ module.exports = {
       fontFamily:{
         'antonio': 'Antonio',
         'spartan': 'League Spartan',
-      }
+      },
     },
   },
   plugins: [],
