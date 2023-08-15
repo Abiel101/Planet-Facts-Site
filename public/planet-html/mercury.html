@@ -11,37 +11,88 @@
   <title>Frontend Mentor | Planets fact site</title>
 </head>
 <body class="bg-bg-color bg-[url('../img/background-stars.svg')] text-text-color bg-contain">
-  <nav class="py-4 px-6 flex justify-between border-b-[1px] border-b-medium-gray">
+  <nav class="py-4 px-6 flex justify-between items-center border-b-[1px] border-b-white border-opacity-[0.1] md:flex-col md:pt-8 lg:flex-row lg:py-5 lg:px-8">
     <div>
       <!-- Logo -->
       <a href="#" class="uppercase text-3xl font-antonio">THE PLANETS</a>
     </div>
     <!-- Hamburger Menu -->
-    <div class="sm:hidden">
-      <ul>
+    <div class="md:hidden">
+      <div id="hambuger-icon">
+        <img src="../img/icon-hamburger.svg" alt="icon-hamburger">
+      </div>
+      <ul class="h-full w-full absolute bg-bg-color pt-[22px] px-6 left-0 top-[4.45rem]">
         <!-- Navigation Links -->
-        <li class="flex items-center"><div class="inline-block w-5 h-5 rounded-full bg-[#DEF4FC] mr-6"></div><a href="#">Mercury</a></li>
-        <li class="flex items-center"><div class="inline-block w-5 h-5 rounded-full bg-[#F7CC7F] mr-6"></div><a href="#">Venus</a></li>
-        <li class="flex items-center"><div class="inline-block w-5 h-5 rounded-full bg-[#545BFE] mr-6"></div><a href="#">Earth</a></li>
-        <li class="flex items-center"><div class="inline-block w-5 h-5 rounded-full bg-[#FF6A45] mr-6"></div><a href="#">Mars</a></li>
-        <li class="flex items-center"><div class="inline-block w-5 h-5 rounded-full bg-[#ECAD7A] mr-6"></div><a href="#">Jupiter</a></li>
-        <li class="flex items-center"><div class="inline-block w-5 h-5 rounded-full bg-[#FCCB6B] mr-6"></div><a href="#">Saturn</a></li>
-        <li class="flex items-center"><div class="inline-block w-5 h-5 rounded-full bg-[#65F0D5] mr-6"></div><a href="#">Uranus</a></li>
-        <li class="flex items-center"><div class="inline-block w-5 h-5 rounded-full bg-[#497EFA] mr-6"></div><a href="#">Neptune</a></li>
+        <li class="mobile_nav-links">
+          <span class="flex items-center">
+            <div class="inline-block w-5 h-5 rounded-full bg-[#DEF4FC] mr-6"></div>
+            <a href="#" class="">Mercury</a>
+          </span>
+          <img src="../img/icon-chevron.svg" alt="icon-chevron">
+        </li>
+        <li class="mobile_nav-links">
+          <span class="flex items-center">
+            <div class="inline-block w-5 h-5 rounded-full bg-[#F7CC7F] mr-6"></div>
+            <a href="#">Venus</a>
+          </span>
+          <img src="../img/icon-chevron.svg" alt="icon-chevron">
+        </li>
+        <li class="mobile_nav-links">
+          <span class="flex items-center">
+            <div class="inline-block w-5 h-5 rounded-full bg-[#545BFE] mr-6"></div>
+            <a href="#">Earth</a>
+          </span>
+          <img src="../img/icon-chevron.svg" alt="icon-chevron">
+        </li>
+        <li class="mobile_nav-links">
+          <span class="flex items-center">
+            <div class="inline-block w-5 h-5 rounded-full bg-[#FF6A45] mr-6"></div>
+            <a href="#">Mars</a>
+          </span>
+          <img src="../img/icon-chevron.svg" alt="icon-chevron">
+        </li>
+        <li class="mobile_nav-links">
+          <span class="flex items-center">
+            <div class="inline-block w-5 h-5 rounded-full bg-[#ECAD7A] mr-6"></div>
+            <a href="#">Jupiter</a>
+          </span>
+          <img src="../img/icon-chevron.svg" alt="icon-chevron">
+        </li>
+        <li class="mobile_nav-links">
+          <span class="flex items-center">
+            <div class="inline-block w-5 h-5 rounded-full bg-[#FCCB6B] mr-6"></div>
+            <a href="#">Saturn</a>
+          </span>
+          <img src="../img/icon-chevron.svg" alt="icon-chevron">
+        </li>
+        <li class="mobile_nav-links">
+          <span class="flex items-center">
+            <div class="inline-block w-5 h-5 rounded-full bg-[#65F0D5] mr-6"></div>
+            <a href="#">Uranus</a>
+          </span>
+          <img src="../img/icon-chevron.svg" alt="icon-chevron">
+        </li>
+        <li class="mobile_nav-links">
+          <span class="flex items-center">
+            <div class="inline-block w-5 h-5 rounded-full bg-[#497EFA] mr-6"></div>
+            <a href="#">Neptune</a>
+          </span>
+          <img src="../img/icon-chevron.svg" alt="icon-chevron">
+        </li>
       </ul>
     </div>
     <!-- Tablet and Desktop Navigation -->
-    <div class="hidden sm:inline-block">
-      <ul>
+    <div class="hidden md:inline-block pt-10 pb-7 h-full">
+      <ul class="flex gap-8 uppercase h-full">
         <!-- Navigation Links -->
-        <li class=""><a href="#">Mercury</a></li>
-        <li class=""><a href="#">Venus</a></li>
-        <li class=""><a href="#">Earth</a></li>
-        <li class=""><a href="#">Mars</a></li>
-        <li class=""><a href="#">Jupiter</a></li>
-        <li class=""><a href="#">Saturn</a></li>
-        <li class=""><a href="#">Uranus</a></li>
-        <li class=""><a href="#">Neptune</a></li>
+        <li class="hover:border-t-mercury-accent border-t-2 border-t-transparent"><a href="#">Mercury</a></li>
+        <li class="hover:border-t-mercury-accent border-t-2 border-t-transparent"><a href="#">Venus</a></li>
+        <li class="hover:border-t-mercury-accent border-t-2 border-t-transparent"><a href="#">Earth</a></li>
+        <li class="hover:border-t-mercury-accent border-t-2 border-t-transparent"><a href="#">Mars</a></li>
+        <li class="hover:border-t-mercury-accent border-t-2 border-t-transparent"><a href="#">Jupiter</a></li>
+        <li class="hover:border-t-mercury-accent border-t-2 border-t-transparent"><a href="#">Saturn</a></li>
+        <li class="hover:border-t-mercury-accent border-t-2 border-t-transparent"><a href="#">Uranus</a></li>
+        <li class="hover:border-t-mercury-accent border-t-2 border-t-transparent"><a href="#">Neptune</a></li>
       </ul>
     </div>
   </nav>
@@ -67,7 +118,10 @@
           to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
           shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth.</p>
         
-          <p>Source : <a href="https://en.wikipedia.org/wiki/Mercury_(planet)">Wikipedia</a></p>
+          <p>
+            Source : <a href="https://en.wikipedia.org/wiki/Mercury_(planet)">Wikipedia</a>
+            <img src="../img/icon-source.svg" alt="icon Source">
+          </p>
         </div>
       
         <!-- Overview Content End -->
@@ -81,7 +135,10 @@
           a solid inner core. The planet's density is the second highest in the 
           Solar System at 5.427 g/cm3 , only slightly less than Earth's density.</p>
         
-          <p>Source : <a href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure">Wikipedia</a></p>
+          <p>
+            Source : <a href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure">Wikipedia</a>
+            <img src="../img/icon-source.svg" alt="icon Source">
+          </p>
         </div>
       
         <!-- Internal Structure Content End -->
@@ -94,7 +151,10 @@
           been geologically inactive for billions of years. It is more heterogeneous 
           than either Mars's or the Moon’s.</p>
         
-          <p>Source : <a href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology">Wikipedia</a></p>
+          <p>
+            Source : <a href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology">Wikipedia</a>
+            <img src="../img/icon-source.svg" alt="icon Source">
+          </p>
         </div>
         <!-- Surface Geology Content End -->
       </div>
@@ -130,5 +190,6 @@
   <script src="../js/index.js"></script>
   <script src="../js/bara.js"></script>
   <script src="../js/context.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </body>
 </html>

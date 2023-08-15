@@ -7,3 +7,6 @@
 @tailwind utilities;
 
 /* Custom Classes */
+.mobile_nav-links{
+  @apply flex items-center justify-between py-[22px] border-b-[1px] border-white border-opacity-[0.1] font-spartan font-medium text-lg uppercase tracking-wider
+}
