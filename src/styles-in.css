@@ -10,3 +10,15 @@
 .mobile_nav-links{
   @apply flex items-center justify-between py-[22px] border-b-[1px] border-white border-opacity-[0.1] font-spartan font-medium text-lg uppercase tracking-wider
 }
+.hide{
+  @apply hidden
+}
+.planetImage{
+  @apply h-28 w-28 my-24
+}
+/* .contentBtns{
+  @apply 
+} */
+.contentBtns-mobile{
+  @apply py-5 border-b-4 border-b-mercury-accent text-xs font-spartan uppercase text-white font-medium tracking-[1.929px]
+}

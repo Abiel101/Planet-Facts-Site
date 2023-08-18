@@ -7,7 +7,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <!-- Styles Link -->
   <link rel="stylesheet" href="../styles/styles-out.css">
-  <!-- Scripts -->
   <title>Frontend Mentor | Planets fact site</title>
 </head>
 <body class="bg-bg-color bg-[url('../img/background-stars.svg')] text-text-color bg-contain">
@@ -18,10 +17,10 @@
     </div>
     <!-- Hamburger Menu -->
     <div class="md:hidden">
-      <div id="hambuger-icon">
+      <div id="hamburger-icon" class="cursor-pointer">
         <img src="../img/icon-hamburger.svg" alt="icon-hamburger">
       </div>
-      <ul class="h-full w-full absolute bg-bg-color pt-[22px] px-6 left-0 top-[4.45rem]">
+      <ul id="mobile-nav" class="hide h-full w-full absolute bg-bg-color pt-[22px] px-6 left-0 top-[4.45rem]">
         <!-- Navigation Links -->
         <li class="mobile_nav-links">
           <span class="flex items-center">
@@ -96,18 +95,24 @@
       </ul>
     </div>
   </nav>
-  <main>
+  <main class="flex flex-col">
+    <!-- Buttons -->
+    <div class="md:hide flex items-center justify-around border-b-[1px] border-opacity[0.2]">
+      <button id="overview-Btn" class="contentBtns-mobile">Overview</button>
+      <button id="internalStructure-Btn" class="contentBtns-mobile">Structure</button>
+      <button id="surfaceGeo-Btn" class="contentBtns-mobile">Surface</button>
+    </div>
     <!-- Planet Images -->
-    <div>
-      <img src="../img/planet-mercury.svg" alt="Mercury Planet">
-      <img src="../img/planet-mercury-internal.svg" alt="Mercury Internal">
-      <img src="../img/geology-mercury.png" alt="Mercury Geology">
+    <div class="flex items-center justify-center">
+      <img class="planetImage" src="../img/planet-mercury.svg" alt="Mercury Planet">
+      <img class="planetImage hide" src="../img/planet-mercury-internal.svg" alt="Mercury Internal">
+      <img class="hide" src="../img/geology-mercury.png" alt="Mercury Geology">
     </div>
 
     <!-- Plannet Content -->
     <div>
       <div>
-        <h1 class="text-2xl font-bold">Mercury</h1>
+        <h1 class="text-2xl font-bold uppercase font-antonio">Mercury</h1>
         <!-- 
           Todo: Might be best to move this in the javascript stuff because the content basically needs to change each time you click the button so it makes sense to have javascript change these things.
         -->
@@ -129,7 +134,7 @@
     
         <!-- Internal Structure Content Start -->
         <!-- Text Content Container -->
-        <div id="interStructure-Context">
+        <div id="interStructure-Context" class="hidden">
           <p>Mercury appears to have a solid silicate crust and mantle overlying a 
           solid, iron sulfide outer core layer, a deeper liquid core layer, and 
           a solid inner core. The planet's density is the second highest in the 
@@ -145,7 +150,7 @@
       
         <!-- Surface Geology Content Start -->
         <!-- Text Content Container -->
-        <div id="surfaceGeo-Context">
+        <div id="surfaceGeo-Context" class="hidden">
           <p>Mercury's surface is similar in appearance to that of the Moon, showing 
           extensive mare-like plains and heavy cratering, indicating that it has 
           been geologically inactive for billions of years. It is more heterogeneous 
@@ -160,10 +165,10 @@
       </div>
 
       <!-- Buttons -->
-      <div>
-        <button id="overview-Btn">01 Overview</button>
-        <button id="internalStructure-Btn">02 Internal Structure</button>
-        <button id="surfaceGeo-Btn">03 Surface Geology</button>
+      <div class="hidden md:inline-block">
+        <button id="overview-Btn" class="contentBtns">01 Overview</button>
+        <button id="internalStructure-Btn" class="contentBtns">02 Internal Structure</button>
+        <button id="surfaceGeo-Btn" class="contentBtns">03 Surface Geology</button>
       </div>
     </div>
   </main>
@@ -187,8 +192,16 @@
     </div>
   </footer>
 
+  <!-- unpkg -->
+  <script src="https://unpkg.com/@barba/core"></script>
+  <!-- jsdelivr -->
+  <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+  <script>
+    bara.init({
+
+    })
+  </script>
   <script src="../js/index.js"></script>
-  <script src="../js/bara.js"></script>
   <script src="../js/context.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </body>
