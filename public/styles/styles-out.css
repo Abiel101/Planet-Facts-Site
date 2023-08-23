@@ -558,8 +558,20 @@ video {
   margin-right: 1.5rem;
 }
 
+.mb-8{
+  margin-bottom: 2rem;
+}
+
+.block{
+  display: block;
+}
+
 .inline-block{
   display: inline-block;
+}
+
+.inline{
+  display: inline;
 }
 
 .flex{
@@ -626,8 +638,9 @@ video {
   border-top-width: 2px;
 }
 
-.border-b-\[2px\]{
-  border-bottom-width: 2px;
+.border-white{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .border-b-white{
@@ -639,16 +652,8 @@ video {
   border-top-color: transparent;
 }
 
-.border-b-\[rgba\]{
-  border-bottom-color: rgba;
-}
-
-.border-b-\[rgba\(255\2c \)\]{
-  border-bottom-color: rgba(255,);
-}
-
-.border-opacity-\[0\.1\]{
-  --tw-border-opacity: 0.1;
+.border-opacity-20{
+  --tw-border-opacity: 0.2;
 }
 
 .bg-\[\#497EFA\]{
@@ -726,13 +731,16 @@ video {
   padding-top: 22px;
 }
 
+.text-center{
+  text-align: center;
+}
+
 .font-antonio{
   font-family: Antonio;
 }
 
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
+.font-spartan{
+  font-family: League Spartan;
 }
 
 .text-3xl{
@@ -740,17 +748,48 @@ video {
   line-height: 2.25rem;
 }
 
+.text-\[40px\]{
+  font-size: 40px;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold{
   font-weight: 700;
+}
+
+.font-normal{
+  font-weight: 400;
 }
 
 .uppercase{
   text-transform: uppercase;
 }
 
+.tracking-widest{
+  letter-spacing: 0.1em;
+}
+
+.text-medium-gray{
+  --tw-text-opacity: 1;
+  color: rgb(131 131 145 / var(--tw-text-opacity));
+}
+
 .text-text-color{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.underline{
+  text-decoration-line: underline;
 }
 
 .ring{
@@ -795,8 +834,7 @@ video {
 
 .contentBtns-mobile{
   border-bottom-width: 4px;
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(65 158 187 / var(--tw-border-opacity));
+  border-bottom-color: transparent;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   font-family: League Spartan;
@@ -809,6 +847,35 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.active{
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(65 158 187 / var(--tw-border-opacity));
+}
+
+.meta_data{
+  margin-bottom: 0.5rem;
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-width: 0.5px;
+  --tw-border-opacity: 1;
+  border-color: rgb(131 131 145 / var(--tw-border-opacity));
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 9px;
+  padding-bottom: 13px;
+  text-transform: uppercase;
+}
+
+.planet_content{
+  margin-top: 1rem;
+  margin-bottom: 1.75rem;
+  text-align: center;
+  font-family: League Spartan;
+  font-weight: 300;
+}
+
 .hover\:border-t-mercury-accent:hover{
   --tw-border-opacity: 1;
   border-top-color: rgb(65 158 187 / var(--tw-border-opacity));
@@ -817,10 +884,6 @@ video {
 @media (min-width: 768px){
   .md\:inline-block{
     display: inline-block;
-  }
-
-  .md\:flex{
-    display: flex;
   }
 
   .md\:hidden{

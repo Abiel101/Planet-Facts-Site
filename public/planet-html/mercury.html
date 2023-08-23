@@ -10,7 +10,7 @@
   <title>Frontend Mentor | Planets fact site</title>
 </head>
 <body class="bg-bg-color bg-[url('../img/background-stars.svg')] text-text-color bg-contain">
-  <nav class="py-4 px-6 flex justify-between items-center border-b-[1px] border-b-white border-opacity-[0.1] md:flex-col md:pt-8 lg:flex-row lg:py-5 lg:px-8">
+  <nav class="py-4 px-6 flex justify-between items-center border-b-[1px] border-b-white border-opacity-20 md:flex-col md:pt-8 lg:flex-row lg:py-5 lg:px-8">
     <div>
       <!-- Logo -->
       <a href="#" class="uppercase text-3xl font-antonio">THE PLANETS</a>
@@ -96,11 +96,11 @@
     </div>
   </nav>
   <main class="flex flex-col">
-    <!-- Buttons -->
-    <div class="md:hide flex items-center justify-around border-b-[1px] border-opacity[0.2]">
-      <button id="overview-Btn" class="contentBtns-mobile">Overview</button>
-      <button id="internalStructure-Btn" class="contentBtns-mobile">Structure</button>
-      <button id="surfaceGeo-Btn" class="contentBtns-mobile">Surface</button>
+    <!-- Content Navigation -->
+    <div class="md:hide flex items-center justify-around border-b-[1px] border-white border-opacity-20">
+      <button id="overview-Btn" class="contentBtns-mobile active">Overview</button>
+      <button id="structure-Btn" class="contentBtns-mobile">Structure</button>
+      <button id="surface-Btn" class="contentBtns-mobile">Surface</button>
     </div>
     <!-- Planet Images -->
     <div class="flex items-center justify-center">
@@ -110,22 +110,26 @@
     </div>
 
     <!-- Plannet Content -->
-    <div>
+    <div class="px-6">
       <div>
-        <h1 class="text-2xl font-bold uppercase font-antonio">Mercury</h1>
+        <h1 class="text-[40px] font-bold uppercase font-antonio text-center">Mercury</h1>
         <!-- 
-          Todo: Might be best to move this in the javascript stuff because the content basically needs to change each time you click the button so it makes sense to have javascript change these things.
+          Todo: Might be best to move this in the javascript stuff because the content 
+          basically needs to change each time you click the button so it makes sense to 
+          have javascript change these things.
         -->
         <!-- Overview Content Start -->
         <!-- Text Content Container -->
-        <div id="overview-Context">
-          <p>Mercury is the smallest planet in the Solar System and the closest 
+        <div id="overview-content" class="planet_content">
+          <p class="mb-8">
+          Mercury is the smallest planet in the Solar System and the closest 
           to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
-          shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth.</p>
+          shortest of all the Sun's planets. Mercury is one of four terrestrial planets in the Solar System, and is a rocky body like Earth.
+          </p>
         
-          <p>
-            Source : <a href="https://en.wikipedia.org/wiki/Mercury_(planet)">Wikipedia</a>
-            <img src="../img/icon-source.svg" alt="icon Source">
+          <p class="text-medium-gray">
+            Source : <a href="https://en.wikipedia.org/wiki/Mercury_(planet)" class="font-normal underline">Wikipedia</a>
+            <img class="inline-block" src="../img/icon-source.svg" alt="icon Source">
           </p>
         </div>
       
@@ -134,15 +138,17 @@
     
         <!-- Internal Structure Content Start -->
         <!-- Text Content Container -->
-        <div id="interStructure-Context" class="hidden">
-          <p>Mercury appears to have a solid silicate crust and mantle overlying a 
+        <div id="structure-content" class="hidden planet_content">
+          <p class="mb-8">
+            Mercury appears to have a solid silicate crust and mantle overlying a 
           solid, iron sulfide outer core layer, a deeper liquid core layer, and 
           a solid inner core. The planet's density is the second highest in the 
-          Solar System at 5.427 g/cm3 , only slightly less than Earth's density.</p>
+          Solar System at 5.427 g/cm3 , only slightly less than Earth's density.
+          </p>
         
-          <p>
-            Source : <a href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure">Wikipedia</a>
-            <img src="../img/icon-source.svg" alt="icon Source">
+          <p class="text-medium-gray">
+            Source : <a href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure" class="font-normal underline">Wikipedia</a>
+            <img class="inline-block" src="../img/icon-source.svg" alt="icon Source">
           </p>
         </div>
       
@@ -150,15 +156,15 @@
       
         <!-- Surface Geology Content Start -->
         <!-- Text Content Container -->
-        <div id="surfaceGeo-Context" class="hidden">
-          <p>Mercury's surface is similar in appearance to that of the Moon, showing 
+        <div id="surface-content" class="hidden planet_content">
+          <p class="mb-8">Mercury's surface is similar in appearance to that of the Moon, showing 
           extensive mare-like plains and heavy cratering, indicating that it has 
           been geologically inactive for billions of years. It is more heterogeneous 
           than either Mars's or the Moon’s.</p>
         
-          <p>
-            Source : <a href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology">Wikipedia</a>
-            <img src="../img/icon-source.svg" alt="icon Source">
+          <p class="text-medium-gray">
+            Source : <a href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology" class="font-normal underline">Wikipedia</a>
+            <img class="inline-block" src="../img/icon-source.svg" alt="icon Source">
           </p>
         </div>
         <!-- Surface Geology Content End -->
@@ -173,22 +179,22 @@
     </div>
   </main>
 
-  <footer>
-    <div>
-      <p>Rotation Time</p>
-      <p>58.6 Days</p>
+  <footer class="px-6">
+    <div class="meta_data">
+      <p class="font-spartan text-xs text-medium-gray tracking-widest font-bold">Rotation Time</p>
+      <p class="font-antonio font-bold text-xl">58.6 Days</p>
     </div>
-    <div>
-      <p>Revolution Time</p>
-      <p>87.97 Days</p>
+    <div class="meta_data">
+      <p class="font-spartan text-xs text-medium-gray tracking-widest font-bold">Revolution Time</p>
+      <p class="font-antonio font-bold text-xl">87.97 Days</p>
     </div>
-    <div>
-      <p>Radius</p>
-      <p>2,439.7 KM</p>
+    <div class="meta_data">
+      <p class="font-spartan text-xs text-medium-gray tracking-widest font-bold">Radius</p>
+      <p class="font-antonio font-bold text-xl">2,439.7 KM</p>
     </div>
-    <div>
-      <p>Average Temp.</p>
-      <p>430°c</p>
+    <div class="meta_data">
+      <p class="font-spartan text-xs text-medium-gray tracking-widest font-bold">Average Temp.</p>
+      <p class="font-antonio font-bold text-xl">430°c</p>
     </div>
   </footer>
 
