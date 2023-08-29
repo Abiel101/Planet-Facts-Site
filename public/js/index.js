@@ -15,26 +15,20 @@ const structureContent = document.getElementById('structure-content');
 const surfaceContent = document.getElementById('surface-content');
 
 
-function changeContent(content1, content2, content3){
+function changeContent(content1, content2, content3, btn1, btn2, btn3){
   content1.classList.remove('hidden');
   content2.classList.add('hidden');
   content3.classList.add('hidden');
+  btn1.classList.add('active');
+  btn2.classList.remove('active');
+  btn3.classList.remove('active');
 }
 overviewBtn.addEventListener('click', () => {
-  changeContent(overviewContent, structureContent, surfaceContent)
-  overviewBtn.classList.add('active');
-  structureBtn.classList.remove('active');
-  surfaceBtn.classList.remove('active');
+  changeContent(overviewContent, structureContent, surfaceContent, overviewBtn, structureBtn, surfaceBtn);
 })
 structureBtn.addEventListener('click', () => {
-  changeContent(structureContent, overviewContent, surfaceContent)
-  overviewBtn.classList.remove('active');
-  structureBtn.classList.add('active');
-  surfaceBtn.classList.remove('active');
+  changeContent(structureContent, overviewContent, surfaceContent, structureBtn, overviewBtn, surfaceBtn);
 })
 surfaceBtn.addEventListener('click', () => {
-  changeContent(surfaceContent, structureContent, overviewContent)
-  overviewBtn.classList.remove('active');
-  structureBtn.classList.remove('active');
-  surfaceBtn.classList.add('active');
+  changeContent(surfaceContent, structureContent, overviewContent, surfaceBtn, overviewBtn, structureBtn);
 })

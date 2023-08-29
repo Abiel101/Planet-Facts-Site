@@ -8,7 +8,7 @@
 
 /* Custom Classes */
 .mobile_nav-links{
-  @apply flex items-center justify-between py-[22px] border-b-[1px] border-white border-opacity-[0.1] font-spartan font-medium text-lg uppercase tracking-wider
+  @apply flex items-center justify-between py-[22px] border-b-[1px] border-white border-opacity-[0.1] font-spartan font-medium text-lg uppercase tracking-wider cursor-pointer
 }
 .hide{
   @apply hidden
@@ -16,9 +16,12 @@
 .planetImage{
   @apply h-28 w-28 my-24
 }
-/* .contentBtns{
-  @apply 
-} */
+.contentBtns{
+  @apply w-full h-10 px-5 py-5 flex items-center gap-4 text-xs mb-4 border border-medium-gray 
+}
+.active_tabel-btn{
+  @apply bg-mercury-accent
+}
 .contentBtns-mobile{
   @apply py-5 border-b-4 border-b-transparent text-xs font-spartan uppercase text-white font-medium tracking-[1.929px] 
 }
@@ -29,5 +32,5 @@
   @apply w-full uppercase border-[0.5px] border-medium-gray flex items-end justify-between px-6 pt-[9px] pb-[13px] mb-2
 }
 .planet_content{
-  @apply text-center mt-4 mb-7 font-spartan font-light
+  @apply mt-4 mb-7 font-spartan font-light
 }
