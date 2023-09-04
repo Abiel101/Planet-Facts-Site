@@ -14,13 +14,34 @@
   @apply hidden
 }
 .planetImage{
-  @apply h-28 w-28 my-24
+  @apply h-28 w-28 my-24 md:h-[184px] md:w-[184px]
 }
 .contentBtns{
-  @apply w-full h-10 px-5 py-5 flex items-center gap-4 text-xs mb-4 border border-medium-gray 
+  @apply w-full h-10 px-5 py-5 flex items-center gap-4 text-xs mb-4 border border-medium-gray  transition duration-200 hover:bg-hover-state cursor-pointer
 }
-.active_tabel-btn{
-  @apply bg-mercury-accent
+.active_mercury-btn{
+  @apply bg-mercury-accent hover:bg-mercury-accent
+}
+.active_venus-btn{
+  @apply bg-venus-accent hover:bg-venus-accent
+}
+.active_earth-btn{
+  @apply bg-earth-accent hover:bg-earth-accent
+}
+.active_mars-btn{
+  @apply bg-mars-accent hover:bg-mars-accent
+}
+.active_jupiter-btn{
+  @apply bg-jupiter-accent hover:bg-jupiter-accent
+}
+.active_saturn-btn{
+  @apply bg-saturn-accent hover:bg-saturn-accent
+}
+.active_uranus-btn{
+  @apply bg-uranus-accent hover:bg-uranus-accent
+}
+.active_neptune-btn{
+  @apply bg-neptune-accent hover:bg-neptune-accent
 }
 .contentBtns-mobile{
   @apply py-5 border-b-4 border-b-transparent text-xs font-spartan uppercase text-white font-medium tracking-[1.929px] 
@@ -29,7 +50,7 @@
   @apply border-b-mercury-accent
 }
 .meta_data{
-  @apply w-full uppercase border-[0.5px] border-medium-gray flex items-end justify-between px-6 pt-[9px] pb-[13px] mb-2
+  @apply w-full uppercase border-[0.5px] border-medium-gray flex items-end justify-between px-6 pt-[9px] pb-[13px] mb-2 md:w-[164px] md:flex-col md:items-start md:justify-start md:p-4 md:m-3 lg:w-56 lg:p-5
 }
 .planet_content{
   @apply mt-4 mb-7 font-spartan font-light

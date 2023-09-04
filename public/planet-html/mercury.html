@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="../styles/styles-out.css">
   <title>Frontend Mentor | Planets fact site</title>
 </head>
-<body class="bg-bg-color bg-[url('../img/background-stars.svg')] text-text-color bg-contain">
+<!-- ID: mercury page is so that Javascript is able to know what page I am on. -->
+<body id="mercury-page" class="bg-bg-color bg-[url('../img/background-stars.svg')] text-text-color bg-contain">
   <nav class="py-4 px-6 flex justify-between items-center border-b-[1px] border-b-white border-opacity-20 md:flex-col md:pt-8 lg:flex-row lg:py-5 lg:px-8">
     <div>
       <!-- Logo -->
@@ -95,7 +96,7 @@
       </ul>
     </div>
   </nav>
-  <main class="flex flex-col">
+  <main class="flex flex-col lg:max-w-6xl mx-auto">
     <!-- Content Navigation -->
     <div class="md:hidden flex items-center justify-around border-b-[1px] border-white border-opacity-20">
       <button id="overview-Btn" class="contentBtns-mobile active">Overview</button>
@@ -172,29 +173,29 @@
 
       <!-- Buttons -->
       <div class="hidden md:flex flex-col w-72 pt-9">
-        <p id="overview-Btn" class="contentBtns active_tabel-btn"><span class="text-white">01</span> <span>Overview</span></p>
-        <p id="internalStructure-Btn" class="contentBtns"><span class="text-medium-gray">02</span> <span>Internal Structure</span></p>
-        <p id="surfaceGeo-Btn" class="contentBtns"><span class="text-medium-gray">03</span> <span>Surface Geology</span></p>
+        <p id="overview-Btn-lg" class="contentBtns active_mercury-btn"><span class="text-white">01</span> <span>Overview</span></p>
+        <p id="structure-Btn-lg" class="contentBtns"><span class="text-medium-gray">02</span> <span>Internal Structure</span></p>
+        <p id="surface-Btn-lg" class="contentBtns"><span class="text-medium-gray">03</span> <span>Surface Geology</span></p>
       </div>
     </div>
   </main>
 
-  <footer class="px-6">
+  <footer class="px-6 md:flex">
     <div class="meta_data">
-      <p class="font-spartan text-xs text-medium-gray tracking-widest font-bold">Rotation Time</p>
-      <p class="font-antonio font-bold text-xl">58.6 Days</p>
+      <p class="font-spartan text-xs md:text-[8px] lg:text-[11px] pb-2 text-medium-gray tracking-widest font-bold">Rotation Time</p>
+      <p class="font-antonio font-bold text-xl md:text-2xl lg:text-[40px] md:pb-1 lg:pb-2">58.6 Days</p>
     </div>
     <div class="meta_data">
-      <p class="font-spartan text-xs text-medium-gray tracking-widest font-bold">Revolution Time</p>
-      <p class="font-antonio font-bold text-xl">87.97 Days</p>
+      <p class="font-spartan text-xs md:text-[8px] lg:text-[11px] pb-2 text-medium-gray tracking-widest font-bold">Revolution Time</p>
+      <p class="font-antonio font-bold text-xl md:text-2xl lg:text-[40px] md:pb-1 lg:pb-2">87.97 Days</p>
     </div>
     <div class="meta_data">
-      <p class="font-spartan text-xs text-medium-gray tracking-widest font-bold">Radius</p>
-      <p class="font-antonio font-bold text-xl">2,439.7 KM</p>
+      <p class="font-spartan text-xs md:text-[8px] lg:text-[11px] pb-2 text-medium-gray tracking-widest font-bold">Radius</p>
+      <p class="font-antonio font-bold text-xl md:text-2xl lg:text-[40px] md:pb-1 lg:pb-2">2,439.7 KM</p>
     </div>
     <div class="meta_data">
-      <p class="font-spartan text-xs text-medium-gray tracking-widest font-bold">Average Temp.</p>
-      <p class="font-antonio font-bold text-xl">430°c</p>
+      <p class="font-spartan text-xs md:text-[8px] lg:text-[11px] pb-2 text-medium-gray tracking-widest font-bold">Average Temp.</p>
+      <p class="font-antonio font-bold text-xl md:text-2xl lg:text-[40px] md:pb-1 lg:pb-2">430°c</p>
     </div>
   </footer>
 

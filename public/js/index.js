@@ -10,6 +10,8 @@ const overviewBtn = document.getElementById('overview-Btn');
 const structureBtn = document.getElementById('structure-Btn');
 const surfaceBtn = document.getElementById('surface-Btn');
 
+const tabletBtns = document.querySelectorAll('contentBtns');//tablet buttons and up
+
 const overviewContent = document.getElementById('overview-content');
 const structureContent = document.getElementById('structure-content');
 const surfaceContent = document.getElementById('surface-content');
