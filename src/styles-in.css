@@ -14,10 +14,10 @@
   @apply hidden
 }
 .planetImage{
-  @apply h-28 w-28 my-24 md:h-[184px] md:w-[184px]
+  @apply h-28 w-28 my-24 md:h-[184px] md:w-[184px] lg:w-[290px] lg:h-[290px]
 }
 .contentBtns{
-  @apply w-full h-10 px-5 py-5 flex items-center gap-4 text-xs mb-4 border border-medium-gray  transition duration-200 hover:bg-hover-state cursor-pointer
+  @apply w-full h-10 px-5 py-5 flex items-center gap-4 text-xs mb-4 border border-medium-gray  transition duration-200 hover:bg-hover-state cursor-pointer uppercase font-spartan tracking-wider
 }
 .active_mercury-btn{
   @apply bg-mercury-accent hover:bg-mercury-accent
@@ -50,8 +50,8 @@
   @apply border-b-mercury-accent
 }
 .meta_data{
-  @apply w-full uppercase border-[0.5px] border-medium-gray flex items-end justify-between px-6 pt-[9px] pb-[13px] mb-2 md:w-[164px] md:flex-col md:items-start md:justify-start md:p-4 md:m-3 lg:w-56 lg:p-5
+  @apply w-full uppercase border-[0.5px] border-medium-gray flex items-end justify-between px-6 pt-[9px] pb-[13px] mb-2 md:w-[164px] md:flex-col md:items-start md:justify-start md:p-4 md:m-3 lg:w-64 lg:p-6
 }
 .planet_content{
-  @apply mt-4 mb-7 font-spartan font-light
+  @apply mt-4 mb-7 lg:mt-6 lg:mb-0  font-spartan font-light
 }
