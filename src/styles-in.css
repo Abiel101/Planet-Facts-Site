@@ -55,3 +55,6 @@
 .planet_content{
   @apply mt-4 mb-7 lg:mt-6 lg:mb-0  font-spartan font-light
 }
+li a{
+  @apply text-medium-gray hover:text-white transition-colors duration-200
+}

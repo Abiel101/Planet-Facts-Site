@@ -567,6 +567,30 @@ video {
   margin-right: 1.5rem;
 }
 
+.mb-12{
+  margin-bottom: 3rem;
+}
+
+.mt-12{
+  margin-top: 3rem;
+}
+
+.mt-52{
+  margin-top: 13rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
+}
+
+.block{
+  display: block;
+}
+
 .inline-block{
   display: inline-block;
 }
@@ -579,12 +603,24 @@ video {
   display: none;
 }
 
+.h-24{
+  height: 6rem;
+}
+
 .h-5{
   height: 1.25rem;
 }
 
 .h-full{
   height: 100%;
+}
+
+.h-12{
+  height: 3rem;
+}
+
+.h-14{
+  height: 3.5rem;
 }
 
 .w-5{
@@ -605,6 +641,10 @@ video {
 
 .flex-col{
   flex-direction: column;
+}
+
+.items-end{
+  align-items: flex-end;
 }
 
 .items-center{
@@ -629,6 +669,10 @@ video {
 
 .rounded-full{
   border-radius: 9999px;
+}
+
+.border{
+  border-width: 1px;
 }
 
 .border-b-\[1px\]{
@@ -724,20 +768,16 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.pb-7{
-  padding-bottom: 1.75rem;
-}
-
-.pt-10{
-  padding-top: 2.5rem;
-}
-
 .pt-9{
   padding-top: 2.25rem;
 }
 
 .pt-\[22px\]{
   padding-top: 22px;
+}
+
+.pt-12{
+  padding-top: 3rem;
 }
 
 .text-center{
@@ -1037,14 +1077,27 @@ video {
   }
 }
 
+li a{
+  --tw-text-opacity: 1;
+  color: rgb(131 131 145 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+li a:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .hover\:border-t-mercury-accent:hover{
   --tw-border-opacity: 1;
   border-top-color: rgb(65 158 187 / var(--tw-border-opacity));
 }
 
 @media (min-width: 768px){
-  .md\:inline-block{
-    display: inline-block;
+  .md\:block{
+    display: block;
   }
 
   .md\:flex{
@@ -1112,6 +1165,14 @@ video {
     margin-top: 8rem;
   }
 
+  .lg\:mt-6{
+    margin-top: 1.5rem;
+  }
+
+  .lg\:block{
+    display: block;
+  }
+
   .lg\:w-\[350px\]{
     width: 350px;
   }
@@ -1136,10 +1197,6 @@ video {
     justify-content: center;
   }
 
-  .lg\:justify-between{
-    justify-content: space-between;
-  }
-
   .lg\:px-0{
     padding-left: 0px;
     padding-right: 0px;
@@ -1155,9 +1212,9 @@ video {
     padding-right: 2rem;
   }
 
-  .lg\:py-5{
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
+  .lg\:py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .lg\:pb-2{
