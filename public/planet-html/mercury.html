@@ -11,7 +11,7 @@
 </head>
 <!-- ID: mercury page is so that Javascript is able to know what page I am on. -->
 <body id="mercury-page" class="bg-bg-color bg-[url('../img/background-stars.svg')] text-text-color bg-contain">
-  <nav class="py-4 px-6 flex justify-between border-b-[1px] border-b-white border-opacity-20 md:flex-col md:pt-8 lg:flex-row lg:py-0 lg:px-8">
+  <nav class="py-4 px-6 flex justify-between border-b-[1px] border-b-white border-opacity-20 md:flex-col md:items-center lg:items-start md:pt-8 lg:flex-row lg:py-0 lg:px-8">
     <div>
       <!-- Logo -->
       <a href="#" class="uppercase text-3xl font-antonio lg:block lg:mt-6">THE PLANETS</a>
@@ -199,15 +199,8 @@
     </div>
   </footer>
 
-  <!-- unpkg -->
-  <script src="https://unpkg.com/@barba/core"></script>
-  <!-- jsdelivr -->
-  <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
-  <script>
-    bara.init({
 
-    })
-  </script>
+  <script type="module" src="/public/js/bara.js"></script>
   <script src="../js/index.js"></script>
   <script src="../js/context.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
